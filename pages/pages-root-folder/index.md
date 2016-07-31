@@ -2,8 +2,7 @@
 #layout: frontpage
 layout: page
 header:
-  image_fullwidth: wires-cropped.jpg
-  title: "Ewan Klein"
+  image_fullwidth: wires-cropped-overlay.jpg
 permalink: /index.html
 sidebar: left
 #
