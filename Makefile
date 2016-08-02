@@ -7,7 +7,9 @@ all: rsync
 
 build: $(SITE)
 
-$(SITE): 
+.PHONY: $(SITE)
+
+$(SITE):
 	bundle exec jekyll build
 #	$(JEKYLL) build
 
