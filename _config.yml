@@ -78,7 +78,7 @@ exclude:
     - Makefile
     - blog
     - bib
-    - *.psd
+    - ewan.psd
 
 
 # The language setting is used in /includes/header.html for html-settings
