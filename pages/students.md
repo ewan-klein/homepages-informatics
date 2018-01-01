@@ -6,16 +6,21 @@ layout: page
 
 ## Current PhD Students
 
-[Amy Guy](http://rhiaro.co.uk), *Context-dependent online personas*\\
-[Paolo Pareti](http://homepages.inf.ed.ac.uk/s1054760/), *Expressing Procedural Knowledge as Linked Data*\\
 [Daniel Duma](http://www.danielduma.com), *Context-based Citation Recommendation*
 
 ## Past PhD Students (with completion dates)
 
+### 2017
+{: .notice}
+
+[Amy Guy](http://rhiaro.co.uk), [The Presentation of Self on a Decentralised Web](https://rhiaro.github.io/thesis/)\\
+[Paolo Pareti](http://paolopareti.uk), *The Representation and Execution of Human Know-How on the Web*
+
+
 ### 2010 
 {: .notice}
 
-Johannes Flieger: *[Gradable adjectives and the semantics of locatives](https://www.era.lib.ed.ac.uk/handle/1842/3995)*
+[Johannes Flieger](https://www.linkedin.com/in/johannes-flieger-20760a3/): [Gradable adjectives and the semantics of locatives](https://www.era.lib.ed.ac.uk/handle/1842/3995)
 
 
 ### 2009 
@@ -26,12 +31,12 @@ Johannes Flieger: *[Gradable adjectives and the semantics of locatives](https://
 ### 2008
 {: .notice}
 
-[Sebastian Riedel](http://www.riedelcastro.org): *[Efficient prediction of relational structure and its application to natural language processing](https://www.era.lib.ed.ac.uk/handle/1842/4167)*
+[Sebastian Riedel](http://www.riedelcastro.org): *[Efficient Prediction of Relational Structure and its Application to Natural Language Processing](https://www.era.lib.ed.ac.uk/handle/1842/4167)*
 
 ### 1999
 {: .notice}
 
-Yilmaz Kiliçaslan: *A Form-Meaning Interface for Turkish*\\
+[Yilmaz Kiliçaslan](https://www.researchgate.net/profile/Yilmaz_Kilicaslan2): *A Form-Meaning Interface for Turkish*\\
 Siamak Rezaei: *Linguistic and Computational Analysis of Word Order and Scrambling in Persian*\\
 Matthew Hurst: *Processing Tables for Information Extraction* 
 
@@ -43,7 +48,7 @@ Tomaz Erjavec: <a  href="http://nl.ijs.si/~tomaz/Thesis/">Unification, Inheritan
 ### 1995
 {: .notice}
 
-David Beaver: *Presupposition and Assertion in Dynamic Semantics*
+[David Beaver](https://liberalarts.utexas.edu/linguistics/faculty/dib97): *Presupposition and Assertion in Dynamic Semantics* ([published version](https://web.stanford.edu/group/cslipublications/cslipublications/site/1575861208.shtml))
 
 ### 1993
 {: .notice}
@@ -60,7 +65,7 @@ Michael Reape: *A Formal Theory of Word Order: A Case Study in West Germanic*
 ### 1991
 {: .notice}
 
-Claire Gardent: *Semantic and computational properties of verb phrase ellipsis*
+[Claire Gardent](https://members.loria.fr/CGardent/): *Semantic and Computational Properties of Verb Phrase Ellipsis*]
 
 ### 1990
 {: .notice}
