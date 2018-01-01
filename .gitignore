@@ -4,3 +4,5 @@ _site/
 _sidebar-copy.html
 
 *.bak
+Gemfile.lock
+
