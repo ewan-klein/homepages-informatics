@@ -14,7 +14,7 @@ layout: page
 {: .notice}
 
 [Amy Guy](http://rhiaro.co.uk), [The Presentation of Self on a Decentralised Web](https://rhiaro.github.io/thesis/)\\
-[Paolo Pareti](http://paolopareti.uk), *The Representation and Execution of Human Know-How on the Web*
+[Paolo Pareti](http://paolopareti.uk), [The Representation and Execution of Human Know-How on the Web](http://paolopareti.uk/homepage/papers/pareti_PhD_thesis.pdf)
 
 
 ### 2010 
