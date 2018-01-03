@@ -1,11 +1,10 @@
 OUT := refs.html
 OUT_DIR := ../_includes
+CSL := ./apa-cv-mod.csl
 
-html:
-	pandoc --filter pandoc-citeproc --csl apa-cv.csl references.md -o $(OUT_DIR)/$(OUT)
+all:
+	pandoc --filter pandoc-citeproc --csl $(CSL) references.md -o $(OUT_DIR)/$(OUT)
 
-copy:
-	cp -f $(OUT) $(OUT_DIR)/$(OUT)
 
 
 
