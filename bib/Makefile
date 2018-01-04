@@ -1,3 +1,6 @@
+# docs for bibtex2html: https://www.lri.fr/~filliatr/bibtex2html/doc/manual.pdf
+# bibtex2html expects string values for months, so isn't compatible with BibLaTeX
+
 OUT := refs.html
 OUT_DIR := ../_includes
 OPTS := -o $(OUT_DIR)/refs -nokeys -d -r -nobibsource --no-keywords --no-abstract -nodoc 
@@ -14,6 +17,7 @@ all:
 
 # jabref:
 # 	java -jar $(JABREF) $(JAB_OPS) references.bib
+# didn't work with custom export layout!
 
 # temp:
 # 	pandoc refs.tex -o refs.html --bibliography references.bib
