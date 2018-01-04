@@ -1,21 +1,22 @@
 OUT := refs.html
 OUT_DIR := ../_includes
-CSL := ./apa-cv-mod.csl
+OPTS := -o $(OUT_DIR)/refs -nokeys -d -r -nobibsource --no-keywords --no-abstract -nodoc 
 
-JABREF := /Applications/JabRef.app/Contents/java/app/JabRef-4.1.jar
-JAB_OPS := --nogui --output $(OUT), HTML-Hanging-Indent
+# CSL := ./apa-cv-mod.csl
+# JABREF := /Applications/JabRef.app/Contents/java/app/JabRef-4.1.jar
+# JAB_OPS := --nogui --output $(OUT), HTML-Hanging-Indent
 
-b2h:
-	bibtex2html -o refs -nokeys -d -r -nobibsource --no-keywords references.bib
+all:
+	bibtex2html $(OPTS) references.bib
 
-pandoc:
-	pandoc --filter pandoc-citeproc --csl $(CSL) references.md -o $(OUT_DIR)/$(OUT)
+# pandoc:
+# 	pandoc --filter pandoc-citeproc --csl $(CSL) references.md -o $(OUT_DIR)/$(OUT)
 
-jabref:
-	java -jar $(JABREF) $(JAB_OPS) references.bib
+# jabref:
+# 	java -jar $(JABREF) $(JAB_OPS) references.bib
 
-temp:
-	pandoc refs.tex -o refs.html --bibliography references.bib
+# temp:
+# 	pandoc refs.tex -o refs.html --bibliography references.bib
 
 
 
