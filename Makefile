@@ -1,7 +1,8 @@
 DEPLOY := ewan@staff.ssh.inf.ed.ac.uk:/public/homepages/ewan/web/
 SITE := _site/
 JEKYLL := /opt/local/bin/jekyll
-RSYNC_OPTS := -v -rz --checksum -e "ssh -o GSSAPIKeyExchange=no"
+#RSYNC_OPTS := -v -rz --checksum -e "ssh -o GSSAPIKeyExchange=no"
+RSYNC_OPTS := -v -rz --checksum
 PORT := 4020
 
 all: rsync

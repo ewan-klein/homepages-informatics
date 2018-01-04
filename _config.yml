@@ -79,6 +79,7 @@ exclude:
     - blog
     - bib
     - ewan.psd
+    - _posts/design
 
 
 # The language setting is used in /includes/header.html for html-settings
