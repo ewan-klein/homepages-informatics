@@ -3,6 +3,8 @@ _site/
 
 _sidebar-copy.html
 
+bib/bib2html*
+
 *.bak
 Gemfile.lock
 
