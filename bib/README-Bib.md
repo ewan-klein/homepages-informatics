@@ -32,10 +32,12 @@ Couldn't get it to work from command line. Current layouts did downcasing of som
 * https://github.com/backtracking/bibtex2html
 
 * https://bitbucket.org/chhshen/bibtex2x
+* https://www.scads.de/en/news-en/blog-en/347-orc-schlange?showall=&start=6
+* https://mi.eng.cam.ac.uk/~bdrs2/bib2html.py
 * https://www.spinellis.gr/sw/textproc/bib2xhtml/
 * https://raw.githubusercontent.com/acla/bibtex2html/master/bibtex2html.php
 * http://www.irisa.fr/lagadic/soft/bib2html/bib2html.pdf
-* http://membres.lycos.fr/sgalland/english/tools/bib2html/,setofscriptLaTeXandPerl,byStéphane Galland.
+* http://membres.lycos.fr/sgalland/english/tools/bib2html/, set of script LaTeX and Perl,byStéphane Galland.
 * http://www-sop.inria.fr/epidaure/personnel/Gregoire.Malandain/codes/bibtex2html.html, C, by Gergoire Malandain.
 * http://www.cs.cornell.edu/home/wkiri/bib2html/, flex and C, by Kiri Wagstaff.
 * http://www.ctan.org/tex-archive/biblio/bibtex/utils/bibtools/, by David Kotz.
