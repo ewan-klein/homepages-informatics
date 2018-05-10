@@ -4,6 +4,8 @@ permalink: "/students/"
 layout: page
 ---
 
+I am not planning to take on any more PhD students in the foreseeable future. 
+
 ## Current PhD Students
 
 [Daniel Duma](http://www.danielduma.com), *Context-based Citation Recommendation*

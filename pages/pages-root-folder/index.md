@@ -7,12 +7,12 @@ sidebar: left
 homepage: true
 ---
 
-I am Professor of Language Technology in the University of Edinburgh's [School of Informatics](https://www.ed.ac.uk/informatics/). From September 2017, I am also a [Turing Fellow](https://www.turing.ac.uk/turing-fellows/) at [the Alan Turing Institute](https://www.turing.ac.uk).
+I am Professor Emeritus of Language Technology in the University of Edinburgh's [School of Informatics](https://www.ed.ac.uk/informatics/). From September 2017, I am also a [Turing Fellow](https://www.turing.ac.uk/turing-fellows/) at [the Alan Turing Institute](https://www.turing.ac.uk).
 
 
 ## Research
 
-My research career spans a range of topics, including theoretical linguistics; computational phonology, syntax and semantics; spoken dialogue with mobile robots; text mining in domains such as medical biology and digital history; the use, interpretation and social embedding of different forms of data in the context of Living Labs and the Iternet of Things.
+My research career spans a range of topics, including theoretical linguistics; computational phonology, syntax and semantics; spoken dialogue with mobile robots; text mining in domains such as medical biology and digital history; the use, interpretation and social embedding of different forms of data in the context of Living Labs and the Internet of Things.
 
 <!-- My current research is centred on [Edinburgh Living Lab](http://edinburghlivinglab.org), where I am collaborating with colleagues in social science, design informatics, geosciences and social anthropology. A key theme is how new sources and new forms of data affect our understanding of ourselves as both individuals and as collectives. I have a strong interest in civic open data and in the 'grey area' between personal and non-personal data. -->
 
@@ -28,7 +28,6 @@ My research career spans a range of topics, including theoretical linguistics; c
 I am a Co-Founder and Co-Director of [Edinburgh Living Lab](http://edinburghlivinglab.org){:target="_blank"}, an organisation that focuses on data and design thinking to stimulate innovation, developed in collaboration with the City of Edinburgh Council and a range of public, third and private sector partners.
 </div>
 </div>
-
 
 <div class="medium-6 small-12 columns">
 <div class="panel radius" markdown="1">

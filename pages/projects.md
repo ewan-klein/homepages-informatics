@@ -1,12 +1,17 @@
 ---
-layout: page
+layout: page-fullwidth
 title: Funded Research Projects
 permalink: "/projects/"
 ---
 
-
-|2012&ndash;2013|£150k|Principal Investigator &mdash; JISC/SSHRC (Digging into Data Programme) Trading Consequences. Joint with EDINA, York University (Canada), University of St. Andrews. |
-|2012&ndash;2013|£95k|Co-Investigator &mdash; JISC (Research Tools Programme) Twitter Analysis Workbench Development. Joint with University of Manchester, University of St. Andrews, University of Leeds, University College London, University of Wolverhampton.|
+|2017&ndash;2018|60k€|Principal Investigator &mdash; OrganiCity Experiment, *Edinburgh CitySounds* |
+|2016&ndash;2017|£50k |Co-Investigator &mdash; Innovate-UK, *Flexi-shuttle: Demand responsive transport optimisation*, University of Edinburgh|
+|2016&ndash;2017|£71k |Principal Investigator &mdash; EPSRC GCRF Institutional Sponsorship, *ED4All: Creating Value from Data in the context of Off-grid Energy Systems*|
+|2016|£45k (including in-kind)|Principal Investigator &mdash; The Data Lab, *Ultra-low emission Taxis Feasibility Study*|
+|2013&ndash;2017|£339k|Co-Investigator &mdash; EC Marie Curie Initial Training Network, *ESSENCE: Evolution of Shared Semantics in Computational Environments* |
+|2013&ndash;2016|£339k|Principal Investigator &mdash; EC H2020, *S-CASE: Scaffolding Scalable Software Services* |
+|2012&ndash;2013|£150k|Principal Investigator &mdash; JISC/SSHRC (Digging into Data Programme), *Trading Consequences*. Joint with EDINA, York University (Canada), University of St. Andrews. |
+|2012&ndash;2013|£95k|Co-Investigator &mdash; JISC (Research Tools Programme), *Twitter Analysis Workbench Development*. Joint with University of Manchester, University of St. Andrews, University of Leeds, University College London, University of Wolverhampton.|
 |2005&ndash;2008|£1.89m    |Principal Investigator &mdash; ITI Life Sciences, Text Mining (TXM). Joint with Cognia EU Ltd.|
 |2004&ndash;2007|£267k|Principal Investigator with Claire Grover and Chris Manning (Stanford) &mdash; Scottish Enterprise, Edinburgh-Stanford Information Extraction (EASIE). Joint with CSLI, Stanford. |
 |2002&ndash;2004|£150k|Principal Investigator with Claire Grover and Chris Manning (Stanford) &mdash; Scottish Enterprise, Machine Learning for Named Entity Recognition (SEER). Joint with CSLI, Stanford.|
