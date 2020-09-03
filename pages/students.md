@@ -2,15 +2,18 @@
 title: Students
 permalink: "/students/"
 layout: page
+description: List of Phd students supervised by Ewan Klein, ordered by year of graduation.
 ---
 
-I am not planning to take on any more PhD students in the foreseeable future. 
-
-## Current PhD Students
-
-[Daniel Duma](http://www.danielduma.com), *Context-based Citation Recommendation*
+Now that I have retired, I am no longer supervising any PhD students.
 
 ## Past PhD Students (with completion dates)
+
+### 2019
+{: .notice}
+
+[Daniel Duma](http://www.danielduma.com), [Contextual Citation Recommendation using Scientific Discourse Annotation Schemes](https://hdl.handle.net/1842/35968)
+
 
 ### 2017
 {: .notice}
@@ -28,7 +31,7 @@ I am not planning to take on any more PhD students in the foreseeable future.
 ### 2009 
 {: .notice}
 
-[Kate Byrne](http://homepages.inf.ed.ac.uk/kbyrne3/): *[Populating the Semantic Web &mdash; Combining Text and Relational Databases as RDF Graphs](https://www.era.lib.ed.ac.uk/handle/1842/3781)*
+[Kate Byrne](https://twitter.com/katefbyrne): *[Populating the Semantic Web &mdash; Combining Text and Relational Databases as RDF Graphs](https://www.era.lib.ed.ac.uk/handle/1842/3781)*
 
 ### 2008
 {: .notice}

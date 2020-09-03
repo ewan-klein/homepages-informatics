@@ -11,10 +11,10 @@
 title: 'Ewan Klein'
 
 # The slogan describes your website and is used on homepage in <title> and other important places
-slogan: 'A Flexible Theme for Jekyll'
+slogan: ''
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: ''
+description: 'Academic website of Ewan Klein at the University of Edinburgh, covering research projects, publications and PhD students'
 
 # The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
 #credits: '<p>Created with &hearts; by <a href="http://phlow.de/">Phlow</a> with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a>.</p>'
@@ -54,6 +54,7 @@ logo: "ek-logo.png"
 #
 plugins:
     - jekyll-gist
+    - jekyll-seo-tag
 #    - jekyll-paginate
 # paginate: 5                      # Paginates all X entries
 # paginate_path: "blog/page:num"   # Pagination path › Important for blog page in /blog/ to work
@@ -79,6 +80,10 @@ exclude:
     - blog
     - bib
     - ewan.psd
+    - contact.md
+    - search.md
+    - humans.txt
+    - redirected_page.md
     - _posts/design
 
 

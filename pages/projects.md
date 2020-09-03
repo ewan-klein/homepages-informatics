@@ -2,9 +2,13 @@
 layout: page-fullwidth
 title: Funded Research Projects
 permalink: "/projects/"
+description: List of Ewan Klein's funded research projects 1984 to 2019
 ---
 
-|2017&ndash;2018|60k€|Principal Investigator &mdash; OrganiCity Experiment, *Edinburgh CitySounds* |
+| *Dates* | *Project Funding* | *Role, Funder &amp; Project Name* |
+| ------- | ----------------- | --------------------------------- |
+| 2019 | £50k | Principal Investigator &mdash; City of Edinburgh Council, *Data and Design for Property Planning* |
+| 2017&ndash;2018 | 60k€ | Principal Investigator &mdash; OrganiCity Experiment, *Edinburgh CitySounds* |
 |2016&ndash;2017|£50k |Co-Investigator &mdash; Innovate-UK, *Flexi-shuttle: Demand responsive transport optimisation*, University of Edinburgh|
 |2016&ndash;2017|£71k |Principal Investigator &mdash; EPSRC GCRF Institutional Sponsorship, *ED4All: Creating Value from Data in the context of Off-grid Energy Systems*|
 |2016|£45k (including in-kind)|Principal Investigator &mdash; The Data Lab, *Ultra-low emission Taxis Feasibility Study*|

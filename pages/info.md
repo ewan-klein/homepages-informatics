@@ -2,10 +2,13 @@
 layout: page
 title: "Contact Information"
 permalink: "/info/"
+description: "Academic address of Ewan Klein"
 ---
 
 Ewan Klein\\
+ewan AT inf.ed.ac.uk
+
 School of Informatics, University of Edinburgh\\
-Informatics Forum 2.11, 10 Crichton Street\\
-Edinburgh, EH8 9AB, UK\\
+Informatics Forum, 10 Crichton Street\\
+Edinburgh, EH8 9AB, UK
 
