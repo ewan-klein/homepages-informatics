@@ -1,8 +1,8 @@
 ---
-title: Students
+title: Past PhD Students
 permalink: "/students/"
 layout: page
-description: List of Phd students supervised by Ewan Klein, ordered by year of graduation.
+meta_description: List of Phd students supervised by Ewan Klein, ordered by year of graduation.
 ---
 
 Now that I have retired, I am no longer supervising any PhD students.

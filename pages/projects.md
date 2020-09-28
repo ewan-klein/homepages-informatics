@@ -2,7 +2,7 @@
 layout: page-fullwidth
 title: Funded Research Projects
 permalink: "/projects/"
-description: List of Ewan Klein's funded research projects 1984 to 2019
+meta_description: List of Ewan Klein's funded research projects 1984 to 2019
 ---
 
 | *Dates* | *Project Funding* | *Role, Funder &amp; Project Name* |

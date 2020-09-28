@@ -7,8 +7,8 @@
 # Resource › http://blog.sorryapp.com/blogging-with-jekyll/2014/02/06/adding-authors-to-your-jekyll-site.html
 ewan: # replace this with your info
   name: "Ewan Klein"
-  siterole: ""
-  uri: hhttp://homepages.inf.ed.ac.uk/ewan/
-  email:
+  siteroles: "Admin and content creator"
+  uri: http://homepages.inf.ed.ac.uk/ewan/
+  email: ewan AT inf.ed.ac.uk
   twitter: "@ewanhklein"
 # you can add more authors here

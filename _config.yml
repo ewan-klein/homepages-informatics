@@ -8,7 +8,7 @@
 #                                                 /____/
 #
 # Title of your website
-title: 'Ewan Klein'
+title: 'Ewan Klein Homepages, School of Informatics'
 
 # The slogan describes your website and is used on homepage in <title> and other important places
 slogan: ''
@@ -17,7 +17,7 @@ slogan: ''
 description: 'Academic website of Ewan Klein at the University of Edinburgh, covering research projects, publications and PhD students'
 
 # The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
-#credits: '<p>Created with &hearts; by <a href="http://phlow.de/">Phlow</a> with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a>.</p>'
+credits: '<p>Based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a> theme and <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>.</p>'
 
 # Main author of the website
 # See > authors.yml
@@ -54,7 +54,8 @@ logo: "ek-logo.png"
 #
 plugins:
     - jekyll-gist
-    - jekyll-seo-tag
+    - jekyll-relative-links
+#    - jekyll-seo-tag
 #    - jekyll-paginate
 # paginate: 5                      # Paginates all X entries
 # paginate_path: "blog/page:num"   # Pagination path › Important for blog page in /blog/ to work
@@ -82,7 +83,6 @@ exclude:
     - ewan.psd
     - contact.md
     - search.md
-    - humans.txt
     - redirected_page.md
     - _posts/design
 
