@@ -1,4 +1,4 @@
-Based on [Feeling Responsive Theme](http://phlow.github.io/feeling-responsive/documentation/)
+Academic homepages, using Minimal Mistakes theme.
 
 
 
