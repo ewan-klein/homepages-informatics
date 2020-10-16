@@ -4,7 +4,7 @@ author_profile: true
 header:
   image_fullwidth: wires-cropped-overlay.jpg
 permalink: /index.html
-title: "Home"
+title: "Ewan Klein"
 ---
 
 
