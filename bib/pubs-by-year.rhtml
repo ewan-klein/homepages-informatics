@@ -1,0 +1,10 @@
+         <% years = bib.all_values(:year).sort.reverse; years.each do |year| %>
+             <% lst = bib["@entry[year=#{year}]"] %>
+
+              <h3 class="year"><%= year %></h3>
+               <OL>
+	         <% lst.each do |entry| %>
+                   <li class="bibitem"><%= embed("entry.rhtml", :entry => entry) %></li>
+	         <% end %>
+               </OL>
+         <% end %>
