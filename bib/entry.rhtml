@@ -1,8 +1,12 @@
+<%# url = ''; url = entry['myurl'] ? entry['myurl'] : entry['url'] %>
 <% url = ''; url = entry['myurl'] ? entry['myurl'] : entry['url'] %>
+<% doi = entry['doi'] %>
+
 <% has_arxiv = !entry['arxivurl'].nil? and !entry['arxivurl'].strip.empty? %>
+
 <% title = entry.title.to_s(:filter => :latex) %>
 
-<% warn ("No URL for publication "+entry.key.to_s) unless (url or has_arxiv) %>
+<% warn ("No URL for publication " + entry.key.to_s) unless (url or doi or has_arxiv) %>
 <% if !defined? no_js then no_js = false end %>
 
 <p>
@@ -71,12 +75,13 @@ ERROR! Can't display <%= entry.type %> <%= entry.key %>
 <p class="note">(<%= entry['webnote'] %>)</p>
 <% end %>
 
-<% show_bar = url && has_arxiv  %>
+<% show_bar = url && (doi || has_arxiv)  %>
 <p>
    [
-  <% if url or has_arxiv %>
+  <% if url or doi or has_arxiv %>
      <% if url %><a href="<%=url%>">.pdf</a><% end %>
 		 <% if show_bar %> | <% end %>
+     <% if doi %><a href="https://doi.org/<%=doi%>">DOI</a><% end %>
 		 <% if has_arxiv %><a href="<%=entry['arxivurl']%>">arXiv</a><% end %>
   <% else %>
      to appear
