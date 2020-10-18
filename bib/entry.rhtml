@@ -1,7 +1,7 @@
-<%# url = ''; url = entry['myurl'] ? entry['myurl'] : entry['url'] %>
-<% url = ''; url = entry['myurl'] ? entry['myurl'] : entry['url'] %>
-<% doi = entry['doi'] %>
+<%# template adapted from Charles Sutton https://github.com/casutton/bibout %>
 
+<% url = entry['url'] %>
+<% doi = entry['doi'] %>
 <% has_arxiv = !entry['arxivurl'].nil? and !entry['arxivurl'].strip.empty? %>
 
 <% title = entry.title.to_s(:filter => :latex) %>
@@ -9,6 +9,7 @@
 <% warn ("No URL for publication " + entry.key.to_s) unless (url or doi or has_arxiv) %>
 <% if !defined? no_js then no_js = false end %>
 
+<div id="bibitem">
 <p>
 <% if entry.type == :string %>
 <%# fail silently %>
@@ -75,16 +76,30 @@ ERROR! Can't display <%= entry.type %> <%= entry.key %>
 <p class="note">(<%= entry['webnote'] %>)</p>
 <% end %>
 
-<% show_bar = url && (doi || has_arxiv)  %>
+<% pdf = "" %>
+<% if url and url.end_with?(".pdf") %>
+  <% pdf = url %>
+<% end %>
+
+<% if doi and !doi.start_with?("https://doi.org") %>
+  <% doi = "https://doi.org/" + doi %>
+<% end %>
+
+<% if url and !doi %>
+  <% if url.start_with?("https://doi.org") %>
+    <% doi = url %>
+  <% end %>
+<% end %>
+
+
+<% show_bar = pdf && (doi || has_arxiv)  %>
 <p>
    [
-  <% if url or doi or has_arxiv %>
-     <% if url %><a href="<%=url%>">.pdf</a><% end %>
+  <% if pdf or doi or has_arxiv %>
+     <% if pdf %><a href="<%=pdf%>">.pdf</a><% end %>
 		 <% if show_bar %> | <% end %>
-     <% if doi %><a href="https://doi.org/<%=doi%>">DOI</a><% end %>
+     <% if doi %><a href="<%=doi%>">DOI</a><% end %>
 		 <% if has_arxiv %><a href="<%=entry['arxivurl']%>">arXiv</a><% end %>
-  <% else %>
-     to appear
   <% end %>
   <% if !no_js %>
      | <a href="javascript:toggle('bib<%=entry.key %>', 'bib_link_<%=entry.key %>', 'bib')"  id="bib_link_<%=entry.key %>">bib</a>
@@ -109,9 +124,13 @@ ERROR! Can't display <%= entry.type %> <%= entry.key %>
 
 <% if !no_js %>
 
-<div id="div<%=entry.key %>"></div>
-<div style="display:none;" id="abs<%= entry.key%>"><div class="abstract"><%= entry['abstract']%></div></div>
+<div style="display:none;" id="abs<%= entry.key%>">
+  <div class="abstract"><p><%= entry['abstract']%></p></div>
+</div>
 
-<div style="display:none;" id="bib<%= entry.key%>"><pre class="bibtex"><%=entry.minimize.to_s%></pre></div>
+<div style="display:none;" id="bib<%= entry.key%>">
+  <pre class="bibtex"><%=entry.minimize.to_s%></pre>
+</div>
 
+</div> <%# close <div id="bibitem" %>
 <% end %>

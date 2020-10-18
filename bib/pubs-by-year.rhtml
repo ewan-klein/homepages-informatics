@@ -3,11 +3,9 @@
 <h3 class="year">
     <%= year %>
 </h3>
-<ol>
+<!--<div id="bibitem">-->
     <% lst.each do |entry| %>
-    <p class="bibitem">
         <%= embed("entry.rhtml", :entry => entry) %>
-    </p>
     <% end %>
-</ol>
+<!--</div>-->
 <% end %>
