@@ -1,6 +1,23 @@
 /* for publication listing on front page */
-ol { list-style-type: none; padding: 0 0 0 0; margin-left: 2em; margin-bottom: 2ex; }
-p { margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; }
+div#bibitem { list-style-type: none; 
+	padding: 0 0 0 0; 
+	margin-bottom: 2ex; 
+}
+
+#bibitem p { 
+	margin-left: 2em; 
+	margin-top: 0; 
+	margin-bottom: 0; 
+	padding-top: 0; 
+	padding-bottom: 0;
+	font-size: 0.75em;
+}
+
+pre.bibtex {
+	font-size: 0.65em;
+	margin-left: 2em; 
+
+}
 
 /* for the publications by topic two-column list */
 ul.twocol {
