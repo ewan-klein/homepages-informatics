@@ -1,14 +1,32 @@
 <%# template adapted from Charles Sutton https://github.com/casutton/bibout %>
 
-<% url = entry['url'] %>
-<% doi = entry['doi'] %>
-<% has_arxiv = !entry['arxivurl'].nil? and !entry['arxivurl'].strip.empty? %>
+<%# url = entry['url'] ? entry['url'] : '' %>
+<%# doi = entry['doi'] ? entry['doi'] : '' %>
+<%# has_arxiv = !entry['arxivurl'].nil? and !entry['arxivurl'].strip.empty? %>
+
+<% if !entry['url'].nil? %>
+ <% url = entry['url'] %>
+<% elsif !entry['doi'].nil? %>
+  <% url = entry['doi'] %>
+<% end %>
+
 
 <% title = entry.title.to_s(:filter => :latex) %>
 
-<% warn ("No URL for publication " + entry.key.to_s) unless (url or doi or has_arxiv) %>
+<% if url %>
+ <% full_title = "<a href=\"" + url + "\"><b>"+ title + "</b></a>" %>
+<% else %>
+  <% full_title = title %>
+<% end %>
+
+<% missing_url = true %> <%# debug flag %>
+<% if missing_url %>
+  <% warn ("No URL for publication " + entry.key.to_s) unless url %>
+<% end %>
+
 <% if !defined? no_js then no_js = false end %>
 
+<%# this <div> wrapper replaces the original <OL> wrapper from pubs-by-year template %>
 <div id="bibitem">
 <p>
 <% if entry.type == :string %>
@@ -16,6 +34,7 @@
 <% elsif entry.type == :inproceedings %>
 
 <%# @inproceedings %>
+<%=full_title %>
 <a href="<%=url%>"><b><%= title %></b></a>.&nbsp;<%= entry.author.pretty %>.
 	In <i><%= entry['booktitle'] %></i>.  <%= entry['year'] %>.
 
@@ -28,6 +47,10 @@
   <%if entry['note']%><%= entry['note']%>.<%end%>
   <%= entry['year'] %>.
 
+
+<%# @incollection %>
+<a href="<%=url%>"><b><%= title %></b></a>.&nbsp;<%= entry.author.pretty  %>.
+  In <%= entry['editor'] %>, editors. <i><%= entry['booktitle'] %></i>. <%= entry['publisher'] %>.  <%= entry['year'] %>.
 
 <% elsif entry.type == :incollection %>
 
@@ -76,7 +99,7 @@ ERROR! Can't display <%= entry.type %> <%= entry.key %>
 <p class="note">(<%= entry['webnote'] %>)</p>
 <% end %>
 
-<% pdf = "" %>
+<% pdf = nil %>
 <% if url and url.end_with?(".pdf") %>
   <% pdf = url %>
 <% end %>
@@ -92,18 +115,26 @@ ERROR! Can't display <%= entry.type %> <%= entry.key %>
 <% end %>
 
 
-<% show_bar = pdf && (doi || has_arxiv)  %>
+<%# show_bar = pdf or doi %>
 <p>
    [
-  <% if pdf or doi or has_arxiv %>
-     <% if pdf %><a href="<%=pdf%>">.pdf</a><% end %>
-		 <% if show_bar %> | <% end %>
-     <% if doi %><a href="<%=doi%>">DOI</a><% end %>
+  <% if pdf or doi %>
+     <% if pdf %>
+       <a href="<%=pdf%>">.pdf</a> |
+       <%# warn (entry.key.to_s + ": " + pdf) %>
+     <% end %>
+
+     <% if doi %>
+      <a href="<%=doi%>">DOI</a> |
+      <% end %> 
+
 		 <% if has_arxiv %><a href="<%=entry['arxivurl']%>">arXiv</a><% end %>
+
   <% end %>
   <% if !no_js %>
-     | <a href="javascript:toggle('bib<%=entry.key %>', 'bib_link_<%=entry.key %>', 'bib')"  id="bib_link_<%=entry.key %>">bib</a>
-     <% if entry['abstract'] %>
+   
+    <a href="javascript:toggle('bib<%=entry.key %>', 'bib_link_<%=entry.key %>', 'bib')"  id="bib_link_<%=entry.key %>">bib</a>
+    <% if entry['abstract'] %>
        | <a href="javascript:toggle('abs<%=entry.key %>', 'abs_link_<%=entry.key %>', 'abstract')" id="abs_link_<%= entry.key %>">abstract</a>
      <% end %>
    <% end %>
