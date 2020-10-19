@@ -1,10 +1,12 @@
 _site/
 .sass-cache/
+_drafts/
+publications/
 
-_sidebar-copy.html
-
-bib/bib2html*
+_includes/bib.html
 
 *.bak
 Gemfile.lock
+
+*.xlsx
 
