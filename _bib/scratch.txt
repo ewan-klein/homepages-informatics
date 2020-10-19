@@ -1,0 +1,14 @@
+http://www.ltg.ed.ac.uk/prosper/papers/grover-2000-dcl/ps/
+http://www.ltg.ed.ac.uk/prosper/papers/holt-1999-sds/ps/
+http://www.ltg.ed.ac.uk/prosper/papers/holt-1999-nlh/ps/
+klein:1991:PDT.ps
+
+http://homepages.inf.ed.ac.uk/ewan/publications/
+
+bibout -t pubs-by-year.rhtml -o test.html test.bib
+
+
+<%# @book %>
+<% elsif entry.type == :book %>
+<%= full_title %>.&nbsp;<%= entry.author  %>.
+  <%= entry['publisher'] %>.  <%= entry['year'] %>.

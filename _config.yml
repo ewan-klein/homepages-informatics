@@ -22,8 +22,8 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "Ewan Klein"
 description              : "Academic website of Ewan Klein at the University of Edinburgh, covering research projects, publications and PhD students'
 "
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : http://homepages.inf.ed.ac.uk
+baseurl                  : /ewan
 repository               : "ewan-klein/homepages"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -169,6 +169,7 @@ exclude:
   - gulpfile.js
   - LICENSE
   - log
+  - Makefile
   - node_modules
   - package.json
   - package-lock.json

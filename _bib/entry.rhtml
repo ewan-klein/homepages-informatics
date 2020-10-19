@@ -82,7 +82,7 @@
 <% elsif entry.type == :book %>
 
 <%# book %>
-<%=full_title %>.&nbsp;<%= entry.author %>.
+<%=full_title %>.&nbsp;<%= entry.author.pretty %>.
 <%= entry['year'] %>, <%= entry['publisher'] %>, <%= entry['place'] %>.
 
 
